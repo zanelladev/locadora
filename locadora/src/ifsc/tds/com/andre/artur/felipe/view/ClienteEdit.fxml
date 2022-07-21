@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane fx:id="pnlPrincipal" prefHeight="200.0" prefWidth="400.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="ifsc.tds.com.andre.artur.felipe.controller.ClienteEditController">
+   <children>
+      <GridPane fx:id="pnlDados" layoutX="26.0" layoutY="68.0" prefHeight="39.0" prefWidth="353.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="272.0" minWidth="10.0" prefWidth="105.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="347.0" minWidth="10.0" prefWidth="284.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label fx:id="lblNome" text="Nome" />
+            <TextField fx:id="txtNome" maxWidth="254.0" prefHeight="25.0" prefWidth="254.0" GridPane.columnIndex="1" />
+         </children>
+      </GridPane>
+      <HBox fx:id="bnlBotoes" alignment="BASELINE_CENTER" layoutX="179.0" layoutY="145.0" prefHeight="30.0" prefWidth="200.0" spacing="10.0">
+         <children>
+            <Button fx:id="btnOK" mnemonicParsing="false" onAction="#onClickBtnOK" prefWidth="80.0" text="OK">
+               <tooltip>
+                  <Tooltip fx:id="tlpOK" text="OK" />
+               </tooltip>
+            </Button>
+            <Button fx:id="btnCancela" mnemonicParsing="false" onAction="#onClickBtnCancela" prefWidth="80.0" text="Cancela">
+               <tooltip>
+                  <Tooltip fx:id="tlpCancela" text="Cancela" />
+               </tooltip>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
